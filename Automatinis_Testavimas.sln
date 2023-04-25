@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestai", "UnitTestai\Un
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skaiciuotuvas", "Skaiciuotuvas\Skaiciuotuvas.csproj", "{42B864F1-2F24-4FA4-9A9F-BED43F494036}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "13 užduotis. Unit testai", "13 užduotis. Unit testai", "{34787265-8A57-473F-B914-F8532F71491F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uzduotis13", "uzduotis13\uzduotis13.csproj", "{0B762CDD-7D9F-45F7-849A-F511D22CA811}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,9 +25,16 @@ Global
 		{42B864F1-2F24-4FA4-9A9F-BED43F494036}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42B864F1-2F24-4FA4-9A9F-BED43F494036}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42B864F1-2F24-4FA4-9A9F-BED43F494036}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B762CDD-7D9F-45F7-849A-F511D22CA811}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B762CDD-7D9F-45F7-849A-F511D22CA811}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B762CDD-7D9F-45F7-849A-F511D22CA811}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B762CDD-7D9F-45F7-849A-F511D22CA811}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0B762CDD-7D9F-45F7-849A-F511D22CA811} = {34787265-8A57-473F-B914-F8532F71491F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {17C88009-E4DA-408F-8E33-F695C345036D}
