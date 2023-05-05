@@ -14,34 +14,35 @@ namespace DemoQA
         {
             driver = new ChromeDriver();
             driver.Manage().Window.Maximize();
-            driver.Navigate().GoToUrl("https://demoqa.com/text-box");
         }
 
         [Test]
         public void FillTextBoxesAndSubmitForm()
         {
+            driver.Navigate().GoToUrl("https://demoqa.com/text-box");
+
             // Input test data into text boxes
             IWebElement fullName = driver.FindElement(By.Id("userName"));
-            fullName.SendKeys("John Doe");
+            fullName.SendKeys("Jonas Jonaitis");
 
             IWebElement email = driver.FindElement(By.Id("userEmail"));
-            email.SendKeys("johndoe@test.com");
+            email.SendKeys("jon@test.com");
 
             IWebElement currentAddress = driver.FindElement(By.Id("currentAddress"));
-            currentAddress.SendKeys("123 Main St");
+            currentAddress.SendKeys("Vilnius");
 
             IWebElement permanentAddress = driver.FindElement(By.Id("permanentAddress"));
-            permanentAddress.SendKeys("456 Oak Ave");
+            permanentAddress.SendKeys("Kaunas");
 
             // Click Submit button
             IWebElement submitButton = driver.FindElement(By.Id("submit"));
             submitButton.Click();
 
             // Verify that the data was entered and displayed correctly
-            Assert.AreEqual("Name:John Doe", driver.FindElement(By.Id("name")).Text);
-            Assert.AreEqual("Email:johndoe@test.com", driver.FindElement(By.Id("email")).Text);
-            Assert.AreEqual("Current Address :123 Main St", driver.FindElement(By.CssSelector("#output div:nth-child(3)")).Text);
-            Assert.AreEqual("Permananet Address :456 Oak Ave", driver.FindElement(By.CssSelector("#output div:nth-child(4)")).Text);
+            Assert.AreEqual("Name:Jonas Jonaitis", driver.FindElement(By.Id("name")).Text);
+            Assert.AreEqual("Email:jon@test.com", driver.FindElement(By.Id("email")).Text);
+            Assert.AreEqual("Current Address :Vilnius", driver.FindElement(By.CssSelector("#output div:nth-child(3)")).Text);
+            Assert.AreEqual("Permanent Address :Kaunas", driver.FindElement(By.CssSelector("#output div:nth-child(4)")).Text);
         }
 
         [TearDown]
